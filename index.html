@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rinterio</title>
+    <link rel="stylesheet" href="css/style.css">
+    <!-- google fonts CDN -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+    <!-- fontawsome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- daisyUI and tailwind CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- config customization -->
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              colors: {
+                clifford: '#da373d',
+                'color1': '#494949',
+                'color2': '#737373',
+                'color-green': '#ABEF5F',
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="manrope-font">
+    <header class="bg-gradient-to-t from-[#FFFFFF] to-[#1010100a]">
+        <!-- navbar start -->
+        <nav class="w-5/6 mx-auto pt-7">
+            <div class="navbar">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-5 w-5"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor">
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M4 6h16M4 12h8m-8 6h16" />
+                      </svg>
+                    </div>
+                    <ul
+                      tabindex="0"
+                      class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow">
+                      <li><a>Item 1</a></li>
+                      <li>
+                        <a>Parent</a>
+                        <ul class="p-2">
+                          <li><a>Submenu 1</a></li>
+                          <li><a>Submenu 2</a></li>
+                        </ul>
+                      </li>
+                      <li><a>Item 3</a></li>
+                    </ul>
+                  </div>
+                  <a class="btn btn-ghost text-[32px]">
+                    <i class="fa-solid fa-arrow-right -rotate-45 bg-color-green rounded-full p-1"></i>
+                    <span class="font-extrabold ">Rinterio</span>
+                  </a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1 text-base">
+                    <li class=""><a class="text-color1 font-extrabold">Home</a></li>
+                    <li><a>Service</a></li>
+                    <li><a>Portfolio</a></li>
+                    <li><a>Blogs</a></li>
+                    <li><a>Contact Us</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-4">
+                    <a href="#"><i class="fa-solid fa-magnifying-glass p-3 rounded-full bg-white"></i></a>
+                    <a href="#" class="cursor-pointer p-2 rounded-full bg-white"><img src="asset/img/shopping-cart.png" style="max-width: 24px;" alt=""></a>
+                  <a class="btn font-extrabold text-xl px-5 bg-color-green rounded-[32px]">
+                    Book Consult
+                    <i class="fa-solid fa-arrow-right text-color-green font bg-black p-1 rounded-full -rotate-45"></i>
+                  </a>
+                </div>
+            </div>
+        </nav>
+        <!-- navbar end -->
+
+        <!-- banner start -->
+        <section class="banner w-5/6 mx-auto">
+            <div class="hero">
+                <div class="hero-content text-center">
+                  <div class="flex flex-col">
+                    <img class="max-w-[570px] m-auto" src="asset/img/banner.png" alt="banner image">
+                    <h1 class="text-6xl font-extrabold px-6 mt-9 mb-6">A barn house of this design has a striking appearance</h1>
+                    <p class="py-6 w-3/4 mx-auto">
+                        The barn house captivates with its blend of rustic charm and modern sophistication, 
+                        featuring weathered wood, sleek metal accents, and large windows 
+                        that flood the space with natural light
+                    </p>
+                    <a class="btn w-1/6 mx-auto font-extrabold text-xl px-5 bg-[#acef5faf] rounded-[32px]">
+                        View Delails
+                        <i class="fa-solid fa-arrow-right text-black font bg-color-green p-1 rounded-full -rotate-45"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+        </section>
+        <!-- banner end -->
+    </header>
+</body>
+</html>
