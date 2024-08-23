@@ -8,3 +8,15 @@
 .manrope-font{
     font-family: "Manrope", system-ui;
 }
+.hover_item{
+    bottom: calc(100%);
+    transition: 0.5s;
+}
+
+.card_hover:hover .hover_item{
+    bottom: 0;
+}
+
+.aa{
+    min-height: 300px;
+}
